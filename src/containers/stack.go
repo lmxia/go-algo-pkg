@@ -1,4 +1,4 @@
-package stack
+package containers
 
 import (
 	"container/list"
@@ -16,7 +16,7 @@ func (stack *Stack) Pop() interface{} {
 	end := stack.content.Back()
 	if end != nil {
 		stack.content.Remove(end)
-		return end
+		return end.Value
 	}
 	return nil
 }

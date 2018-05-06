@@ -21,4 +21,8 @@ func main() {
 	dfsObj := algos.NewDfs(5, 9)
 	dfsObj.Dfs(graghObj)
 	fmt.Println(dfsObj.GetDfs())
+
+	bfsObj := algos.NewBfs(0, 9)
+	bfsObj.Bfs(graghObj)
+	fmt.Println(bfsObj.GetBfs())
 }
